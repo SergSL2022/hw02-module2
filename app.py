@@ -13,6 +13,17 @@ def hello():
     # Return JSON response with Content-Type header set to application/json
     return jsonify(data), 200, {'Content-Type': 'application/json'}
 
-# Run the Flask application
+# Define a route for the root URL
+@app.route('/healthz')
+def healthz():
+    # Define a simple JSON response
+    data = {
+        'status': 200,
+        'message': 'OK'
+    }
+    # Return JSON response with Content-Type header set to application/json
+    print('health=========>', data)
+    return jsonify(data), 200, {'Content-Type': 'application/json'}
+
 if __name__ == '__main__':
     app.run(debug=True)

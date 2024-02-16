@@ -16,5 +16,8 @@ EXPOSE 5000
 # Define environment variable
 ENV FLASK_APP app.py
 
+HEALTHCHECK --interval=30s --timeout=5s CMD curl -fs http://localhost:5000/healthz || exit 1
+
+
 # Run app.py when the container launches
 CMD ["flask", "run", "--host=0.0.0.0"]

@@ -21,3 +21,8 @@ Tag image with different name, e.g. localhost:5000/python, push it to registry a
 
 STEP 3
 Add /healthz endpoint to python app which works in the same way like nodejs endpoint, optionally, add healthcheck to image using this endpoint
+![alt text](<screenshots/Знімок екрана з 2024-02-16 22-59-27.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-00-24.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-04-28.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-05-16.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-09-21.png>)
