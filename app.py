@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from uuid import uuid4
 
 # Create a Flask application instance
 app = Flask(__name__)
@@ -23,6 +24,13 @@ def healthz():
     }
     # Return JSON response with Content-Type header set to application/json
     print('health=========>', data)
+    return jsonify(data), 200, {'Content-Type': 'application/json'}
+
+@app.route('/uuid')
+def uuid():
+    data = {
+        'uuid': uuid4()
+    }
     return jsonify(data), 200, {'Content-Type': 'application/json'}
 
 if __name__ == '__main__':

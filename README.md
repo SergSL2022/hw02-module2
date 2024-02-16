@@ -26,3 +26,25 @@ Add /healthz endpoint to python app which works in the same way like nodejs endp
 ![alt text](<screenshots/Знімок екрана з 2024-02-16 23-04-28.png>)
 ![alt text](<screenshots/Знімок екрана з 2024-02-16 23-05-16.png>)
 ![alt text](<screenshots/Знімок екрана з 2024-02-16 23-09-21.png>)
+
+ADDITIONAL
+STEP 1
+Start nexus and configure it to proxy dockerhub, pull default image via proxy
+
+STEP 2
+Configure local repository in nexus and push image to it, confirm that it was added
+
+STEP 3
+Create DOCKER_AUTH_CONFIG setting to configure authorization to registry and use it to pull/push images from private registry, it should be created manually by generation of ${username}:${password} pair and bade64 encoding it
+
+STEP 4
+Start jFrog Artifactory, check its web interface, check documentation and play with docker repos in it
+
+STEP 5
+Add /uuid endpoint which returns generated uuids in the following format {"uuid": "XXXXX"}, use the uuid module for that
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-35-03.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-35-29.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-37-45.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-40-15.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-43-50.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-16 23-45-02.png>)
