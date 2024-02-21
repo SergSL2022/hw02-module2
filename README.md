@@ -27,9 +27,16 @@ Add /healthz endpoint to python app which works in the same way like nodejs endp
 ![alt text](<screenshots/Знімок екрана з 2024-02-16 23-05-16.png>)
 ![alt text](<screenshots/Знімок екрана з 2024-02-16 23-09-21.png>)
 
-ADDITIONAL
+# ADDITIONAL
 STEP 1
 Start nexus and configure it to proxy dockerhub, pull default image via proxy
+![alt text](<screenshots/Знімок екрана з 2024-02-20 22-51-32.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-20 22-52-07.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-20 22-59-25.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-20 22-59-45.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-20 23-02-16.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-20 23-15-32.png>)
+![alt text](<screenshots/Знімок екрана з 2024-02-20 23-16-23.png>)
 
 STEP 2
 Configure local repository in nexus and push image to it, confirm that it was added
